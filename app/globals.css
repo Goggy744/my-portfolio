@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+*{
+  font-family: 'Outfit', sans-serif;
+}
+html, body{
+  background: #442273;
+  width:100vw;
+}
+.first-section{
+  background: url(../public/Background.png) no-repeat center;
+  background-size:cover;
+}
+.roomImage::before{
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  left: 0px;
+  top: 0px;
+  right: -10px;
+  background-image: url(../public/room.png);
+  background-size: cover;
+  filter: blur(20px);
+}
+
+
